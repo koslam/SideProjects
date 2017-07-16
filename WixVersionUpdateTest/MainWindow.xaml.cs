@@ -15,19 +15,24 @@ namespace WixVersionUpdateTest
 			InitializeComponent();
 		}
 
-		private void button_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Update the selected WIX script with a new version
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 			try
 			{
-				string ls_file_path = textBox.Text;
-				string ls_version = textBox1.Text;
-				string ls_product_name = "Shadow Framework Client";
+				string ls_file_path = FilePathTextBox.Text;
+				string ls_version = VersionTextBox.Text;
+				string ls_product_name = NameTextBox.Text;
 
 				XmlDocument lxd_wix_script = new XmlDocument();
 				lxd_wix_script.Load(ls_file_path);
 				
 				XmlNamespaceManager lxns_manager = new XmlNamespaceManager(lxd_wix_script.NameTable);
-				lxns_manager.AddNamespace("Wix", "http://schemas.microsoft.com/wix/2006/wi");
+				lxns_manager.AddNamespace("Wix", lxd_wix_script.NamespaceURI);
 
 				XmlNode lxn_to_update = lxd_wix_script.SelectSingleNode("descendant::Wix:Module", lxns_manager);
 				if (lxn_to_update != null && lxn_to_update.Attributes != null)

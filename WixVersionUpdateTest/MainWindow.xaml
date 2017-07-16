@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WixVersionUpdateTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="126.674" Width="606.277">
+        Title="MainWindow" Height="136.674" Width="606.277">
     <Grid>
-        <TextBox x:Name="textBox" Margin="10,10,10,0" TextWrapping="Wrap" Text="C:\Builds\Beta\Framework\Installers\x64_WiX\ShadowFrameworkClientModule\ShadowFrameworkClientModule_x64.wxs" VerticalAlignment="Top" FontSize="10"/>
-        <TextBox x:Name="textBox1" Margin="10,30,10,0" TextWrapping="Wrap" Text="10.2.0.777" VerticalAlignment="Top" FontSize="10"/>
-        <Button x:Name="button" Content="Adjust" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Click="button_Click"/>
+        <TextBox x:Name="FilePathTextBox" Margin="10,10,10,0" TextWrapping="Wrap" Text="C:\Temp\Test.wxs" VerticalAlignment="Top" FontSize="10"/>
+        <TextBox x:Name="VersionTextBox" Margin="10,30,10,0" TextWrapping="Wrap" Text="10.0.1.300" VerticalAlignment="Top" FontSize="10"/>
+        <Button x:Name="button" Content="Adjust" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Click="Button_Click"/>
+        <TextBox x:Name="NameTextBox" Margin="10,50,10,0" TextWrapping="Wrap" Text="Test Client" VerticalAlignment="Top" FontSize="10"/>
 
     </Grid>
 </Window>
