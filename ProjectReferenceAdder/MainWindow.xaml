@@ -1,0 +1,17 @@
+﻿<Window x:Name="CSProjReferenceChanger" x:Class="XmlTagRemover.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XmlTagRemover"
+        mc:Ignorable="d"
+        Title="CSProj Reference Changer" Height="313.918" Width="430" BorderBrush="Black">
+    <Grid>
+        <TextBox x:Name="PathTextBox" Height="23" Margin="82,10,10,0" TextWrapping="Wrap" Text="C:\Builds" VerticalAlignment="Top" TabIndex="1"/>
+        <Label x:Name="PathLabel" Content="Path" HorizontalAlignment="Left" Margin="44,10,0,0" VerticalAlignment="Top" Height="23"/>
+        <Button x:Name="AddButton" Content="Add References" HorizontalAlignment="Left" Margin="82,0,0,10" VerticalAlignment="Bottom" Width="125" Click="AddButton_Click" TabIndex="3"/>
+        <Button x:Name="RemoveButton" Content="Remove References" HorizontalAlignment="Left" Margin="212,0,0,10" VerticalAlignment="Bottom" Width="125" Click="RemoveButton_Click" TabIndex="4"/>
+        <Label x:Name="ReferenceLabel" Content="References" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Height="23"/>
+        <TextBox x:Name="ReferencesTextBox" Margin="82,42,10,35" AcceptsReturn="True" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" TabIndex="2"/>
+    </Grid>
+</Window>
