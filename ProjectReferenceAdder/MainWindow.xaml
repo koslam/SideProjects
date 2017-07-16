@@ -1,0 +1,16 @@
+﻿<Window x:Class="XmlTagRemover.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XmlTagRemover"
+        mc:Ignorable="d"
+        Title="FrameworkNext Reference Adder" Height="100" Width="500" BorderBrush="Black">
+    <Grid>
+        <TextBox x:Name="CTPathTextBox" Height="23" Margin="48,10,10,0" TextWrapping="Wrap" Text="c:\Builds" VerticalAlignment="Top"/>
+        <Label x:Name="CTPathLabel" Content="Path" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="23"/>
+		<Button x:Name="CTAddReferencesButton" Content="Add References" HorizontalAlignment="Left" Margin="48,38,0,0" VerticalAlignment="Top" Width="125" Click="CTAddReferencesButton_Click"/>
+		<Button x:Name="CTRemoveReferencesButton" Content="Remove References" HorizontalAlignment="Left" Margin="178,38,0,0" VerticalAlignment="Top" Width="125" Click="CTRemoveReferencesButton_Click"/>
+
+	</Grid>
+</Window>
